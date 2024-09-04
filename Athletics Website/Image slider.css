@@ -1,0 +1,38 @@
+/* Container for the slider */
+.slider-wrapper {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden; /* Ensures that the overflow is hidden and only shows what's visible */
+}
+
+/* Slider images list */
+.slider-wrapper .Image-list {
+    display: flex; /* Changed to flex to align images horizontally */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removes default list styling */
+}
+
+/* Individual images in the slider */
+.slider-wrapper .Image-list .Image-item {
+    flex: 0 0 auto; /* Prevents images from shrinking or growing, keeping them in a line */
+    width: 325px; /* Set the width of the images */
+    height: 400px; /* Set the height of the images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+/* Scrollbar styles */
+.slider-wrapper::-webkit-scrollbar {
+    height: 12px; /* Custom scrollbar height */
+}
+
+.slider-wrapper::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.slider-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+}

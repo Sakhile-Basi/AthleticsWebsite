@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Page</title>
+    <style>
+        .paris {
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 141px;
+            width: 151px;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('RSA pic.svg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: rgb(218, 198, 171);
+            color: rgb(218, 198, 171);
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: burlywood;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5em;
+            margin: 0 1em;
+            border-radius: 5px;
+            background-color: green;
+        }
+
+        nav a:hover {
+            background-color: cornflowerblue;
+            color: aliceblue;
+        }
+
+        section {
+            padding: 2em;
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+            margin: 2em auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: cornflowerblue;
+        }
+
+        footer {
+            background-color: rgb(218, 198, 171);
+            color: green;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: green;">Team SA</h1>
+        <img class="paris" src="paris 2024.jpg" alt="Paris 2024 Logo">
+    </header>  
+
+    <nav>
+        <a href="Home Page.html">Home Page</a>
+        <a href="About Page.html">About the athletes</a>
+        <a href="Contact Page.html">Contact Information</a>
+        <a href="Voting Page.html">Voting</a>
+    </nav>
+
+    <section>
+        <form>
+            <fieldset>
+                <legend>Select Your Favorite Athlete:</legend>
+                <input type="radio" id="akani" name="athlete" value="AK">
+                <label for="akani">Akani Simbine</label><br>
+
+                <input type="radio" id="shaun" name="athlete" value="SM">
+                <label for="shaun">Shaun Maswanganyi</label><br>
+
+                <input type="radio" id="benjamin" name="athlete" value="BR">
+                <label for="benjamin">Benjamin Richardson</label><br>
+
+                <input type="radio" id="wayde" name="athlete" value="WN">
+                <label for="wayde">Wayde Van Niekerk</label><br>
+
+                <input type="radio" id="sokwakhana" name="athlete" value="SZ">
+                <label for="sokwakhana">Sokwakhana Zazini</label><br>
+
+                <input type="radio" id="bradley" name="athlete" value="BN">
+                <label for="bradley">Bradley Nkoana</label><br>
+
+                <input type="radio" id="bayanda" name="athlete" value="BW">
+                <label for="bayanda">Bayanda Walaza</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="rsa">RSA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                </select>
+
+                <label for="subscribe">Subscribe:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Team SA. All rights reserved</p>
+    </footer>
+</body>
+</html>
+
