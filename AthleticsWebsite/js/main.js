@@ -42,27 +42,27 @@ const carouselDots = document.getElementById("carouselDots");
 // Carousel data
 const slides = [
     {
-        image: "images/athletes/Steven Gardiner.jpg",
+        image: "Images/athletes/Steven Gardiner.jpg",
         title: "Steven Gardiner",
         link: "https://worldathletics.org/athletes/bahamas/steven-gardiner-14578505"
     },
     {
-        image: "images/athletes/Elaine Thompson.jpg",
+        image: "Images/athletes/Elaine Thompson.jpg",
         title: "Elaine Thompson",
         link: "https://worldathletics.org/athletes/jamaica/elaine-thompson-herah-14285956"
     },
     {
-        image: "images/athletes/Marcell Jacobs.jpg",
+        image: "Images/athletes/Marcell Jacobs.jpg",
         title: "Marcell Jacobs",
         link: "https://worldathletics.org/athletes/italy/lamont-marcell-jacobs-14453864"
     },
     {
-        image: "images/athletes/Andre.jpg",
+        image: "Images/athletes/Andre.jpg",
         title: "Andre De Grasse",
         link: "https://worldathletics.org/athletes/canada/andre-de-grasse-14535607"
     },
     {
-        image: "images/athletes/Karsten Warholm.jpg",
+        image: "Images/athletes/Karsten Warholm.jpg",
         title: "Karsten Warholm",
         link: "https://worldathletics.org/athletes/norway/karsten-warholm-14479487"
     }
