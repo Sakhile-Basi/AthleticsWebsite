@@ -3,79 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About the Athletes</title>
+    <title>Team SA - Track Athletes</title>
+    
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/athletes.css">
 </head>
 <body>
-    <header>
-       <h1 style="color: green;">Team SA</h1>
-        <img class="paris" src="../Images/paris 2024.jpg" alt="Paris 2024">
-    </header>  
 
-    <nav>
-        <a href="../index.html">Home Page</a>
-        <a href="pages/athletes.html">Athletes</a>
-        <a href="pages/voting.html">Voting</a>
-        <a href="pages/contact.html">Contact</a>
-    </nav>
-
-    <section>
-        <h1>Here are the Men's track athletes that will be representing RSA in Paris this year.</h1>
-        <h3>Click on a picture for the athlete's Wiki page.</h3>
-
-        <div class="athlete-container">
-            <a href="https://worldathletics.org/athletes/south-africa/akani-simbine-14417763" target="_blank">
-                <img src="../Images/AK Simbine.jpg" alt="Akani Simbine">
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../Images/logo/paris 2024.jpg" alt="Team SA Logo">
+                <span>Team SA</span>
             </a>
-            <p>Akani Simbine, born 21 September 1993, is the South African record holder in the 100m with a time of 9.84 set in July 2021 at the Hungarian Grand Prix...</p>
-        </div>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
 
-        <div class="athlete-container">
-            <a href="https://worldathletics.org/athletes/south-africa/shaun-maswanganyi-14748228" target="_blank">
-                <img src="../Images/Shaun Maswanganyi.jpg" alt="Shaun Maswanganyi">
-            </a>
-            <p>Secondly, we have Shaun Maswanganyi, the prince of South African sprinting. This young sprinter, born on the 1st of February 2001, still holds the South Africa junior record of 10.06 and is already the second fastest South African over the 100m which he ran last year at the NCAA D1 Championships. He clocked a time of 9.91. Another promising athlete to look out for especially in the relay.</p>
+            <nav class="main-nav" id="mainNav">
+                <a href="../index.html">Home</a>
+                <a href="athletes.html" class="active">Athletes</a>
+                <a href="voting.html">Voting</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="athlete-container">
-            <a href="https://worldathletics.org/athletes/south-africa/benjamin-richardson-14888283" target="_blank">
-                <img src="../Images/Benjie Richardson.jpg" alt="Benjamin Richardson">
-            </a>
-            <p>Next, we have the 20-year-old Tuks Sport High School graduate born on 19 December 2003. Benjamin Richardson is already an established athlete in the 100m, 200m, and 4x1oom relay. Benjamin is  also a double South African champion and an international relay champion</p>
+    <header class="hero">
+        <div class="hero-inner">
+            <span class="gold-badge">South African Athletics</span>
+            <h1>Men's Track & Sprint Team</h1>
+            <p>Representing South Africa on the world stage with record-breaking speed and championship pedigree.</p>
         </div>
+    </header>
 
-        <div class="athlete-container">
-            <a href="https://worldathletics.org/athletes/south-africa/wayde-van-niekerk-14417677" target="_blank">
-                <img src="../Images/Wayde.jpg" alt="Wayde Van Niekerk">
-            </a>
-            <p>Wayde van Niekerk will return to the Olympics after missing Tokyo due to an ACL injury he acquired in a celebrity-funded rugby match sponsored by FC Soccer. The 31-year-old sprinter was born on 15 July 1992 and has a plethora of achievements. 6  gold medals, and 4 silver medals under 10 years. His biggest achievement would be his world record in the 400m which he set at the 2016 Olympic games with a time of 43.03 seconds. He also became the first athlete to run under 10 seconds for the 100m 20 seconds for the 200m and 44 seconds for the 400m. Can he come back and defend his Olympic title?</p>
-        </div>
+    <main class="athletes-section">
+        <div class="athletes-grid">
 
-        <div class="athlete-container">
-          <a href="https://worldathletics.org/athletes/south-africa/sokwakhana-zazini-14741332" target="_blank">
-                <img src="../Images/Soks.jpg" alt="Sokwakhana Zazini">
-            </a>
-            <p>South African athlete Sokwakhana Zazini was born on January 23, 2000, and specializes in the 400-meter hurdles.In both the 2017 and 2018 World U18 Championships, he took home gold medals. He took home a silver medal from the Universiade in 2019.He participated in the 2020 Summer Olympics in the men's 400-meter hurdles event.</p>
-        </div>
+            <article class="athlete-card">
+                <div class="image-wrapper">
+                    <span class="event-badge">100m / 4x100m</span>
+                    <img src="../Images/athletes/AK Simbine.jpg" alt="Akani Simbine">
+                </div>
+                <div class="athlete-info">
+                    <h2>Akani Simbine</h2>
+                    <span class="discipline-tag">100m Sprinter</span>
+                    <p>South African record holder in the 100m (9.84s). Africa's fastest man and anchor of South Africa's global championship sprint relay unit.</p>
+                    <a href="https://worldathletics.org/athletes/south-africa/akani-simbine-14417763" target="_blank" rel="noopener noreferrer" class="view-athlete-btn">
+                        View athlete &rarr;
+                    </a>
+                </div>
+            </article>
 
-        <div class="athlete-container">
-          <a href="https://worldathletics.org/athletes/south-africa/bradley-botshelo-nkoana-14883601" target="_blank">
-                <img src="../Images/Bradley Nkoana.jpg" alt="Bradley Nkoana">
-            </a>
-            <p>Bradley Nkoana is a promising young sprinter from South Africa, known for his exceptional speed and determination on the track. Specializing in the 100m and 200m events, Bradley has made a name for himself in the athletics community with his powerful starts and consistent performance. Despite being relatively new to the international stage, he has already shown great potential, earning accolades in national and regional competitions. Bradley's dedication to his craft and his passion for representing South Africa at the highest levels make him one of the country's most exciting young talents in sprinting.</p>
-        </div>
-        
-        <div class="athlete-container">
-            <a href="https://worldathletics.org/athletes/south-africa/bayanda-walaza-15022957" target="_blank">
-                <img src="../Images/Walaza.jpg" alt="Bayanda Walaza">
-            </a>
-            <p>Bayanda Walaza is an up-and-coming sprinter from South Africa, recognized for his explosive acceleration and strong finishes. Competing primarily in the 100m and 200m races, Bayanda has quickly risen through the ranks with impressive performances at various national meets. His commitment to training and his ability to remain focused under pressure have earned him a reputation as a fierce competitor. Bayanda's drive to succeed and his ambition to make a mark on the global athletics stage position him as one of South Africa's bright prospects for the future.</p>
-        </div>
+            <article class="athlete-card">
+                <div class="image-wrapper">
+                    <span class="event-badge">100m / 200m</span>
+                    <img src="../Images/athletes/Shaun Maswanganyi.jpg" alt="Shaun Maswanganyi">
+                </div>
+                <div class="athlete-info">
+                    <h2>Shaun Maswanganyi</h2>
+                    <span class="discipline-tag">100m / 200m Sprinter</span>
+                    <p>SA junior record holder (10.06s) and 9.91s NCAA D1 standout. An explosive short-sprint specialist and key component of the 4x100m setup.</p>
+                    <a href="https://worldathletics.org/athletes/south-africa/shaun-maswanganyi-14748228" target="_blank" rel="noopener noreferrer" class="view-athlete-btn">
+                        View athlete &rarr;
+                    </a>
+                </div>
+            </article>
 
-    </section>
+            <article class="athlete-card">
+                <div class="image-wrapper">
+                    <span class="event-badge">100m / 200m</span>
+                    <img src="../Images/athletes/Benjie Richardson.jpg" alt="Benjamin Richardson">
+                </div>
+                <div class="athlete-info">
+                    <h2>Benjamin Richardson</h2>
+                    <span class="discipline-tag">100m / 200m Sprinter</span>
+                    <p>Double South African champion with blistering turn-running capability in the 200m and reliable execution on relay legs.</p>
+                    <a href="https://worldathletics.org/athletes/south-africa/benjamin-richardson-14888283" target="_blank" rel="noopener noreferrer" class="view-athlete-btn">
+                        View athlete &rarr;
+                    </a>
+                </div>
+            </article>
+
+            <article class="athlete-card">
+                <div class="image-wrapper">
+                    <span class="event-badge">400m / 200m</span>
+                    <img src="../Images/athletes/Wayde.jpg" alt="Wayde Van Niekerk">
+                </div>
+                <div class="athlete-info">
+                    <h2>Wayde van Niekerk</h2>
+                    <span class="discipline-tag">400m World Record Holder</span>
+                    <p>World Record holder in the 400m (43.03s) and the first athlete in history to break 10s (100m), 20s (200m), and 44s (400m).</p>
+                    <a href="https://worldathletics.org/athletes/south-africa/wayde-van-niekerk-14417677" target="_blank" rel="noopener noreferrer" class="view-athlete-btn">
+                        View athlete &rarr;
+                    </a>
+                </div>
+            </article>
+
+            <article class="athlete-card">
+                <div class="image-wrapper">
+                    <span class="event-badge">400m Hurdles</span>
+                    <img src="../Images/athletes/Soks.jpg" alt="Sokwakhana Zazini">
+                </div>
+                <div class="athlete-info">
+                    <h2>Sokwakhana Zazini</h2>
+                    <span class="discipline-tag">400m Hurdler</span>
+                    <p>World U18 and U20 gold medallist with international experience competing at the highest level across international hurdles fields.</p>
+                    <a href="https://worldathletics.org/athletes/south-africa/sokwakhana-zazini-14741332" target="_blank" rel="noopener noreferrer" class="view-athlete-btn">
+                        View athlete &rarr;
+                    </a>
+                </div>
+            </article>
+
+            <article class="athlete-card">
+                <div class="image-wrapper">
+                    <span class="event-badge">100m / 200m</span>
+                    <img src="../Images/athletes/Bradley Nkoana.jpg" alt="Bradley Nkoana">
+                </div>
+                <div class="athlete-info">
+                    <h2>Bradley Nkoana</h2>
+                    <span class="discipline-tag">100m / 200m Sprinter</span>
+                    <p>Rapidly rising short-sprint talent known for crisp block starts and composure under high pressure on both national and relay stages.</p>
+                    <a href="https://worldathletics.org/athletes/south-africa/bradley-botshelo-nkoana-14883601" target="_blank" rel="noopener noreferrer" class="view-athlete-btn">
+                        View athlete &rarr;
+                    </a>
+                </div>
+            </article>
+
+            <article class="athlete-card">
+                <div class="image-wrapper">
+                    <span class="event-badge">100m / 200m</span>
+                    <img src="../Images/athletes/Walaza.jpg" alt="Bayanda Walaza">
+                </div>
+                <div class="athlete-info">
+                    <h2>Bayanda Walaza</h2>
+                    <span class="discipline-tag">100m / 200m Sprinter</span>
+                    <p>Dynamic sprinter possessing top-end acceleration and electric opening-leg prowess in international championship relay finals.</p>
+                    <a href="https://worldathletics.org/athletes/south-africa/bayanda-walaza-15022957" target="_blank" rel="noopener noreferrer" class="view-athlete-btn">
+                        View athlete &rarr;
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Team SA. All rights reserved.</p>
+        <p>&copy; 2026 Team SA Athletics. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Simple toggle for the mobile navigation matching the CSS rules
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('open');
+            mainNav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
